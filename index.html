@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>fllam.shop — Digital Store</title>
+<meta name="description" content="fllam.shop — toko produk digital mulai harga yang dapat ditanyakan kepada admin. Pesan via WhatsApp.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#8ed8ff;--blue2:#dff5ff;--navy:#123b59;--white:#fff;--line:rgba(18,59,89,.12)}
+body{font-family:Inter,Arial,sans-serif;color:var(--navy);background:linear-gradient(135deg,#fafdff 0%,var(--blue2) 50%,#fff 100%);min-height:100vh;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;z-index:-1;border:1px solid rgba(72,173,226,.18);border-radius:50%;width:420px;height:420px}
+body:before{top:-190px;right:-130px}
+body:after{bottom:-240px;left:-160px}
+.lines{position:fixed;inset:0;z-index:-2;opacity:.35;background-image:linear-gradient(115deg,transparent 0 47%,rgba(72,173,226,.08) 47.2% 47.5%,transparent 47.7% 100%),linear-gradient(25deg,transparent 0 48%,rgba(72,173,226,.06) 48.2% 48.5%,transparent 48.7% 100%);background-size:90px 90px,120px 120px}
+.container{width:min(1120px,92%);margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.logo{font-size:27px;font-weight:900;letter-spacing:-1px}
+.logo span{color:#39a9df}
+.navbtn{text-decoration:none;color:var(--navy);font-weight:700;border:1px solid var(--line);padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.7)}
+.hero{padding:55px 0 38px;text-align:center}
+.badge{display:inline-block;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.8);border:1px solid var(--line);font-size:13px;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(40px,7vw,72px);line-height:1;letter-spacing:-3px}
+h1 span{color:#38a8df}
+.hero p{max-width:650px;margin:20px auto;color:#527087;font-size:17px;line-height:1.7}
+.cta{display:inline-flex;text-decoration:none;background:var(--navy);color:white;padding:14px 23px;border-radius:14px;font-weight:800;box-shadow:0 12px 30px rgba(18,59,89,.18)}
+.stats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:30px 0 55px}
+.stat{background:rgba(255,255,255,.78);border:1px solid var(--line);padding:14px 20px;border-radius:15px;min-width:145px}
+.stat b{display:block;font-size:20px} .stat small{color:#6a8394}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}
+.section-head h2{font-size:30px} .section-head p{color:#668092}
+.search{width:260px;max-width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;outline:none;background:white}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:14px;padding-bottom:60px}
+.card{background:rgba(255,255,255,.83);border:1px solid var(--line);border-radius:20px;padding:17px;display:flex;gap:13px;transition:.2s;box-shadow:0 8px 25px rgba(39,111,145,.05)}
+.card:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(39,111,145,.12)}
+.icon{width:40px;height:40px;flex:none;border-radius:12px;background:var(--blue2);display:grid;place-items:center;font-weight:900}
+.card-body{flex:1;min-width:0} .card h3{font-size:15px;margin:2px 0 5px} .card p{font-size:12px;color:#718897;margin-bottom:8px}
+.price{font-weight:900;font-size:14px;margin-bottom:11px;color:#1688bd}
+.order{display:block;text-align:center;text-decoration:none;background:#eaf8ff;color:#0877aa;padding:9px;border-radius:10px;font-size:13px;font-weight:800}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;text-align:center;color:#6d8492;font-size:13px}
+footer b{color:var(--navy)}
+@media(max-width:600px){nav{padding-top:16px}.hero{padding-top:38px}.section-head{display:block}.search{margin-top:14px;width:100%}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<div class="lines"></div>
+<div class="container">
+<nav>
+  <div class="logo">fllam<span>.shop</span></div>
+  <a class="navbtn" href="https://wa.me/6287749340178" target="_blank">WhatsApp ↗</a>
+</nav>
+
+<section class="hero">
+  <div class="badge">❝ Digital Catalogue · 사랑 ❞</div>
+  <h1>Semua kebutuhan digital<br><span>di fllam.shop.</span></h1>
+  <p>Temukan berbagai produk digital dengan harga mulai <b>harga yang dapat ditanyakan kepada admin</b>. Pilih produk, lalu pesan langsung melalui WhatsApp.</p>
+  <a class="cta" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20bertanya%20tentang%20produk." target="_blank">Pesan Sekarang via WhatsApp</a>
+  <div class="stats">
+    <div class="stat"><b>58+</b><small>Produk tersedia</small></div>
+    <div class="stat"><b>Tanyakan</b><small>Harga produk</small></div>
+    <div class="stat"><b>WhatsApp</b><small>Order mudah</small></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div><h2>Catalogue</h2><p>Pilih produk digital yang kamu butuhkan.</p></div>
+    <input class="search" id="search" placeholder="Cari produk...">
+  </div>
+  <div class="grid" id="grid">
+    <article class="card" data-name="am">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>AM</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20AM" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="amazon prime">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>AMAZON PRIME</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20AMAZON%20PRIME" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="appmusic">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>APPMUSIC</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20APPMUSIC" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="bstation">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>BSTATION</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20BSTATION" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="bulk">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>BULK</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20BULK" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="camscanner">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>CAMSCANNER</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20CAMSCANNER" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="canva">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>CANVA</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20CANVA" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="capcut">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>CAPCUT</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20CAPCUT" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="catchplay">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>CATCHPLAY</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20CATCHPLAY" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="crunchyroll">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>CRUNCHYROLL</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20CRUNCHYROLL" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="desk netflix">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>DESK NETFLIX</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20DESK%20NETFLIX" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="disney">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>DISNEY</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20DISNEY" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="dramabox">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>DRAMABOX</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20DRAMABOX" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="duolingo">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>DUOLINGO</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20DUOLINGO" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="fizzo">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>FIZZO</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20FIZZO" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="gemini">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>GEMINI</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20GEMINI" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="grammarly">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>GRAMMARLY</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20GRAMMARLY" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="gtc">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>GTC</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20GTC" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="hbomax">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>HBOMAX</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20HBOMAX" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="ibispaint">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>IBISPAINT</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20IBISPAINT" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="iqiyi">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>IQIYI</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20IQIYI" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="kebsos">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>KEBSOS</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20KEBSOS" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="loklok">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>LOKLOK</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20LOKLOK" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="mangotv">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>MANGOTV</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20MANGOTV" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="meitu">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>MEITU</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20MEITU" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="melolo">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>MELOLO</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20MELOLO" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="moviebox">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>MOVIEBOX</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20MOVIEBOX" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="ms365">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>MS365</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20MS365" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="netflix">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>NETFLIX</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20NETFLIX" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="nokos">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>NOKOS</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20NOKOS" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="pay">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>PAY</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20PAY" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="payment">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>PAYMENT</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20PAYMENT" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="picsart">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>PICSART</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20PICSART" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="polarr">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>POLARR</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20POLARR" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="prime">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>PRIME</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20PRIME" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="primevideo">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>PRIMEVIDEO</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20PRIMEVIDEO" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="quillbot">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>QUILLBOT</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20QUILLBOT" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="rumus reffund">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>RUMUS REFFUND</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20RUMUS%20REFFUND" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="scribd">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>SCRIBD</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20SCRIBD" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="shortmax">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>SHORTMAX</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20SHORTMAX" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="snk vidio priv mobile">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>SNK VIDIO PRIV MOBILE</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20SNK%20VIDIO%20PRIV%20MOBILE" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="snk vidio shar mobile">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>SNK VIDIO SHAR MOBILE</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20SNK%20VIDIO%20SHAR%20MOBILE" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="spotify">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>SPOTIFY</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20SPOTIFY" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="sushiroll">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>SUSHIROLL</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20SUSHIROLL" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="tutor login netflix">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>TUTOR LOGIN NETFLIX</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20TUTOR%20LOGIN%20NETFLIX" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="tutor wink">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>TUTOR WINK</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20TUTOR%20WINK" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="vidio">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>VIDIO</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20VIDIO" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="viki">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>VIKI</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20VIKI" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="vision+">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>VISION+</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20VISION+" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="viu">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>VIU</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20VIU" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="vsco">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>VSCO</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20VSCO" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="wattpad">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>WATTPAD</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20WATTPAD" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="wetv">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>WETV</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20WETV" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="wibuku">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>WIBUKU</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20WIBUKU" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="wink">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>WINK</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20WINK" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="youku">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>YOUKU</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20YOUKU" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="youtube">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>YOUTUBE</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20YOUTUBE" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+<article class="card" data-name="zoom">
+        <div class="icon">✦</div>
+        <div class="card-body">
+          <h3>ZOOM</h3>
+          <p>Produk digital fllam.shop</p>
+          <div class="price">Tanyakan ke Admin</div>
+          <a class="order" href="https://wa.me/6287749340178?text=Halo%20fllam.shop,%20saya%20ingin%20memesan%20ZOOM" target="_blank">Pesan via WA</a>
+        </div>
+      </article>
+  </div>
+</section>
+
+<footer>
+  <b>fllam.shop</b> · Digital Store<br>
+  Order via WhatsApp: <b>0877-4934-0178</b><br><br>
+  © 2026 fllam.shop. All rights reserved.
+</footer>
+</div>
+<script>
+const search=document.getElementById('search');
+const cards=[...document.querySelectorAll('.card')];
+search.addEventListener('input',()=>{
+  const q=search.value.toLowerCase().trim();
+  cards.forEach(c=>c.style.display=c.dataset.name.includes(q)?'flex':'none');
+});
+</script>
+
+<script src="https://static.app/js/static.js" type="text/javascript"></script>
+</body>
+</html>
